@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="robots" content="noindex" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <script src="js/init.js"></script>
+    <script src="https://kit.fontawesome.com/a3543e8816.js" crossorigin="anonymous"></script>
+    <title>Contact - Pedro Oliveira</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164129489-1"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164129489-1');
+    </script>
+
+</head>
+
+<body onload="myFunction()">
+    <div id="bg"></div>
+    <div id="loader"></div>
+
+    <div id="main-content">
+
+
+        <nav class="main-navbar">
+
+            <div class="navbar-item border-link"><a href="about.html">About Me</a></div>
+            <div class="navbar-item border-link"><a href="portfolio.html">Portfolio</a></div>
+            <div class="navbar-item border-link"><a href="#!" class="active">Contact</a></div>
+            <div class="navbar-item border-link"><a href="https://blog.dwoliveira.com/" target="_blank">Blog</a></div>
+        </nav>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburgermenu">&#9776;</span>
+
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="navbar-item border-link"><a href="about.html">About Me</a></div>
+            <div class="navbar-item border-link"><a href="portfolio.html">Portfolio</a></div>
+            <div class="navbar-item border-link"><a href="#!">Contact</a></div>
+            <div class="navbar-item border-link"><a href="https://blog.dwoliveira.com/" target="_blank">Blog</a></div>
+        </div>
+
+        <div class="secondary-title">
+            <p>Get in touch!</p>
+
+        </div>
+
+        <div class="contact-container">
+
+
+
+            <div class="contact-form">
+                <h4 class="contact-text">Email Form</h4>
+                <form action="https://formspree.io/xzbrwzpz" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Your name..." required>
+                    <input type="email" id="lname" name="lastname" placeholder="Your email..." required>
+                    <textarea id="msg" name="message" class="materialize-textarea " placeholder="Your Message..."
+                        required></textarea>
+                        <div class="g-recaptcha" data-sitekey="6Lcv3fQUAAAAAK4g9aCi7CDXR7UIYcZkhLhAm7M-"></div>
+
+
+                    <button type="submit" class="submit"><i class="fas fa-paper-plane"> </i> Submit</button>
+                </form>
+
+            </div>
+
+            <div class="contact-social">
+                <h4 class="contact-text">Social Media</h4>
+                <div class="social-grid">
+                    <a href="https://www.linkedin.com/in/dwoliveira" target="_blank">
+                        <div class="social-item linkedin">
+                            <i class="fa-3x fab fa-linkedin " aria-hidden="true"></i>
+
+                        </div>
+                    </a>
+                    <a href="https://www.behance.net/pnboliveira" target="_blank">
+                        <div class="social-item behance">
+                            <i class="fa-3x fab fa-behance " aria-hidden="true"></i>
+
+                        </div>
+                    </a>
+                    <a href="https://www.gitlab.com/pnboliveira" target="_blank">
+                        <div class="social-item gitlab">
+
+                            <i class="fa-3x fab fa-gitlab " aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/dwoliveira_" target="_blank">
+                        <div class="social-item twitter">
+                            <i class="fa-3x fab fa-twitter " aria-hidden="true"></i>
+
+                        </div>
+                    </a>
+                    <a href="https://twitch.tv/dwang" target="_blank">
+                        <div class="social-item twitch">
+                            <i class="fa-3x fab fa-twitch twitch-lock" aria-hidden="true"></i>
+
+                            <i aria-hidden="true" class="twitch-unlock"><img src="img/TwitchGlitchBlackOps.svg" alt="Twitch Logo"></i>
+
+                        </div>
+                    </a>
+                    <a href="http://www.youtube.com/c/PedroBrandãoOliveira" target="_blank">
+                        <div class="social-item yt">
+                            <i class="fa-3x fab fa-youtube" aria-hidden="true"></i>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <a href="index.html" class="footer-link">
+        <footer>&copy; Pedro Oliveira, <span id="date"></span>.</footer>
+    </a>
+
+</body>
+
+</html>

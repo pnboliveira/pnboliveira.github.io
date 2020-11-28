@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="robots" content="noindex" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <script src="js/init.js"></script>
+    <script src="https://kit.fontawesome.com/a3543e8816.js" crossorigin="anonymous"></script>
+    <title>Portfolio - Pedro Oliveira</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164129489-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164129489-1');
+</script>
+
+</head>
+
+<body onload="myFunction()">
+    <div id="bg"></div>
+    <div id="loader"></div>
+
+    <div id="main-content">
+
+
+        <nav class="main-navbar">
+
+            <div class="navbar-item border-link"><a href="about.html">About Me</a></div>
+            <div class="navbar-item border-link"><a href="#!" class="active">Portfolio</a></div>
+            <div class="navbar-item border-link"><a href="contact.html">Contact</a></div>
+            <div class="navbar-item border-link"><a href="https://blog.dwoliveira.com/" target="_blank">Blog</a></div>
+        </nav>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburgermenu">&#9776;</span>
+
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="navbar-item border-link"><a href="about.html">About Me</a></div>
+            <div class="navbar-item border-link"><a href="#!" class="active">Portfolio</a></div>
+            <div class="navbar-item border-link"><a href="contact.html">Contact</a></div>
+            <div class="navbar-item border-link"><a href="https://blog.dwoliveira.com/" target="_blank">Blog</a></div>
+        </div>
+
+        <div class="secondary-title">
+            <p>Portfolio</p>
+            <div class="navbar-item border-link"><a href="#web">Web Development</a></div>
+            <div class="navbar-item border-link"><a href="#gamedev">Game Development</a></div>
+            <div class="navbar-item border-link"><a href="#media">Multimedia</a></div>
+        </div>
+        
+        <div class="portfolio-container">
+            <div class="portfolio-item video">
+                <iframe src="https://www.youtube-nocookie.com/embed/hzRJpYdAjjg?controls=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="portfolio-item">
+                <h4 id="web" class="portfolio-title">Web Development <i class="fas fa-code"></i></h4>
+                <div class="portfolio-grid">
+                    <div class="card card-item">
+                        <img src="img/Work8.jpg" alt="Avatar">
+                        <div class="card-container">
+                            <h3 class="card-title"><b>Socialite</b></h3>
+                            <div class="card-content">
+                                <p>Assignment for Web App Development 2, coded in PHP/PDO and MySQL.</p>
+                                <div class="card-link"><a href="https://gitlab.com/pnboliveira/socialite" target="_blank"><i class="fa-lg fab fa-gitlab " aria-hidden="true"></i> Documentation on GitLab</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-item">
+                        <img src="img/Work00.png" alt="Avatar">
+                        <div class="card-container">
+                            <h3 class="card-title"><b>Twitch Live Detection </b></h3>
+                            <div class="card-content">
+
+                                <p>JavaScript/jQuery function to load a Twitch stream and chat on a web page
+                                    automatically.</p>
+                                    <div class="card-link"><a href="https://gitlab.com/pnboliveira/twitch-live-detection" target="_blank"><i class="fa-lg fab fa-gitlab " aria-hidden="true"></i> Documentation on GitLab</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card card-item">
+                        <img src="img/Work1.jpg" alt="Avatar">
+                        <div class="card-container">
+                            <h3 class="card-title"><b>Sonic Marathon </b></h3>
+                            <div class="card-content">
+                                <p>7 days of nothing but Sonic Games, all for charity. </p>
+                                <div class="card-link"><a href="https://gitlab.com/pnboliveira/sonic-marathon" target="_blank"><i class="fa-lg fab fa-gitlab " aria-hidden="true"></i> Documentation on GitLab</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card card-item">
+                        <img src="img/Work2.jpg" alt="Avatar">
+                        <div class="card-container">
+                            <h3 class="card-title"><b>Wine Store </b></h3>
+                            <div class="card-content">
+                                <p>Assignment for Web App Development 1. </p>
+
+                                <div class="card-link"><a href="https://gitlab.com/pnboliveira/loja-vinhos" target="_blank"><i class="fa-lg fab fa-gitlab " aria-hidden="true"></i> Documentation on GitLab</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <h4 id="gamedev" class="portfolio-title">Game Development <i class="fas fa-gamepad"></i></h4>
+                <div class="portfolio-grid">
+                    <div class="card card-item">
+                        <img src="img/Work3.jpg" alt="Avatar">
+                        <div class="card-container">
+                            <h3 class="card-title"><b>DreamLock </b></h3>
+                            <div class="card-content">
+
+                                <p>What if you could control & invade your dreams? Personal project and Professional
+                                    Aptitude Test for my Multimedia Technician Course in 2016.</p>
+                                    <div class="card-link"><a href="https://gitlab.com/pnboliveira/dreamlock" target="_blank"><i class="fa-lg fab fa-gitlab " aria-hidden="true"></i> Documentation on GitLab</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card card-item">
+                        <img src="img/Work5.jpg" alt="Avatar">
+                        <div class="card-container">
+                            <h3 class="card-title"><b>The Sketchbook </b></h3>
+                            <div class="card-content">
+                                <p>A graphic journal can tell several stories. Developed during Nerd Monkeys's BananaJam
+                                    2015 in collaboration with the Omicron Team. [Cancelled]</p>
+                                    <div class="card-link"><a href="http://gamejolt.com/games/the-sketchbook/55787" target="_blank"><i class="fa-lg fas fa-bolt " aria-hidden="true"></i> Official GameJolt page</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card card-item">
+                        <img src="img/Work4.jpg" alt="Avatar">
+                        <div class="card-container">
+                            <h3 class="card-title"><b>Space Larry </b></h3>
+                            <div class="card-content">
+                                <p>An endless runner developed for a group assignment for Information Systems. </p>
+                                <div class="card-link"><a href="https://gitlab.com/pnboliveira/space-larry" target="_blank"><i class="fa-lg fab fa-gitlab " aria-hidden="true"></i> Documentation on GitLab</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <h4 id="media" class="portfolio-title">Multimedia <i class="fas fa-video"></i></h4>
+                <div class="portfolio-grid">
+                    <div class="card card-item">
+                        <img src="img/Work6.jpg" alt="Avatar">
+                        <div class="card-container">
+                            <h3 class="card-title"><b>Streaming Assets</b></h3>
+                            <div class="card-content">
+
+                                <p>Motion Graphics and Panels for my Twitch page.</p>
+
+                                <div class="card-link"><a href="https://www.behance.net/gallery/96107471/Twitch-Assets" target="_blank" rel="noopener noreferrer"><i class="fa-lg fab fa-behance-square" aria-hidden="true"></i> Project on Behance</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card card-item">
+                        <img src="img/Work7.jpg" alt="Avatar">
+                        <div class="card-container">
+                            <h3 class="card-title"><b>CMYK 2018</b></h3>
+                            <div class="card-content">
+                                <p>Motion Graphics and Poster creation for CMYK 2018.</p>
+                                <div class="card-link"><a href="https://www.behance.net/gallery/96106879/CMYK-2018" target="_blank" rel="noopener noreferrer"><i class="fa-lg fab fa-behance-square" aria-hidden="true"></i> Project on Behance</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="index.html" class="footer-link">
+        <footer>&copy; Pedro Oliveira, <span id="date"></span>.</footer>
+    </a>
+
+
+</body>
+
+</html>
