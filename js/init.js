@@ -1,6 +1,5 @@
 var myVar;
 n =  new Date();
-clientapi = "6Lcy3PQUAAAAAO7Ww09F89ZfWCexf2nkqEmFaBMX";
 
 function myFunction() {
   myVar = setTimeout(showPage, 500);
