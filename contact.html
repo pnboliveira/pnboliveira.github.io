@@ -11,8 +11,18 @@
     <script src="js/init.js"></script>
     <script src="https://kit.fontawesome.com/a3543e8816.js" crossorigin="anonymous"></script>
     <title>Contact - Pedro Oliveira</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-   
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164129489-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164129489-1');
+    </script>
 
 </head>
 
@@ -25,8 +35,8 @@
 
         <nav class="main-navbar">
 
-            <div class="navbar-item border-link"><a href="about.html">About Me</a></div>
-            <div class="navbar-item border-link"><a href="portfolio.html">Portfolio</a></div>
+            <div class="navbar-item border-link"><a href="about">About Me</a></div>
+            <div class="navbar-item border-link"><a href="portfolio">Portfolio</a></div>
             <div class="navbar-item border-link"><a href="#!" class="active">Contact</a></div>
             <div class="navbar-item border-link"><a href="https://blog.dwoliveira.com/" target="_blank">Blog</a></div>
         </nav>
@@ -34,8 +44,8 @@
 
         <div id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="navbar-item border-link"><a href="about.html">About Me</a></div>
-            <div class="navbar-item border-link"><a href="portfolio.html">Portfolio</a></div>
+            <div class="navbar-item border-link"><a href="about">About Me</a></div>
+            <div class="navbar-item border-link"><a href="portfolio">Portfolio</a></div>
             <div class="navbar-item border-link"><a href="#!">Contact</a></div>
             <div class="navbar-item border-link"><a href="https://blog.dwoliveira.com/" target="_blank">Blog</a></div>
         </div>
@@ -56,7 +66,6 @@
                     <input type="email" id="lname" name="lastname" placeholder="Your email..." required>
                     <textarea id="msg" name="message" class="materialize-textarea " placeholder="Your Message..."
                         required></textarea>
-                        <div class="g-recaptcha" data-sitekey="6Lcv3fQUAAAAAK4g9aCi7CDXR7UIYcZkhLhAm7M-"></div>
 
 
                     <button type="submit" class="submit"><i class="fas fa-paper-plane"> </i> Submit</button>
@@ -79,13 +88,13 @@
 
                         </div>
                     </a>
-                    <a href="https://www.gitlab.com/pnboliveira" target="_blank">
-                        <div class="social-item gitlab">
+                    <a href="https://github.com/pnboliveira" target="_blank">
+                        <div class="social-item github">
 
-                            <i class="fa-3x fab fa-gitlab " aria-hidden="true"></i>
+                            <i class="fa-3x fab fa-github" aria-hidden="true"></i>
                         </div>
                     </a>
-                    <a href="https://twitter.com/dwoliveira_" target="_blank">
+                    <a href="https://twitter.com/pnboliveira_" target="_blank">
                         <div class="social-item twitter">
                             <i class="fa-3x fab fa-twitter " aria-hidden="true"></i>
 
@@ -95,11 +104,12 @@
                         <div class="social-item twitch">
                             <i class="fa-3x fab fa-twitch twitch-lock" aria-hidden="true"></i>
 
-                            <i aria-hidden="true" class="twitch-unlock"><img src="img/TwitchGlitchBlackOps.svg" alt="Twitch Logo"></i>
+                            <i aria-hidden="true" class="twitch-unlock"><img src="img/TwitchGlitchBlackOps.svg"
+                                    alt="Twitch Logo"></i>
 
                         </div>
                     </a>
-                    <a href="http://www.youtube.com/c/PedroBrandãoOliveira" target="_blank">
+                    <a href="https://www.youtube.com/channel/UC57uf5r3SY67G34tSbMBssg" target="_blank">
                         <div class="social-item yt">
                             <i class="fa-3x fab fa-youtube" aria-hidden="true"></i>
 
