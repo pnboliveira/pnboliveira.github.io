@@ -658,7 +658,7 @@ border:0;
 @media (max-width:767px) {
 
     #bg{
-        width:250vw!important;
+        width:250vw;
     }
     .main-navbar {
         display: none;
