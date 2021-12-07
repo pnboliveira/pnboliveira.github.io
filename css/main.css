@@ -148,6 +148,8 @@ body {
 .profile-image {
     opacity: 1;
     width: 75%;
+    border-radius: 50%;
+    border: 5px solid #fff;
     margin: auto;
     padding: auto;
 }
