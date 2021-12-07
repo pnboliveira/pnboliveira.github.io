@@ -741,10 +741,9 @@ border:0;
         
         clip-path: unset;
         background-image: url('../img/picture.jpg');
-    background-size:cover;
-        width: 88vw;
+        background-size:cover;
+        max-width:100%;
         border-radius: 50%;
-        padding: 20vh 0;
         text-align: center;
         margin: 0 auto;
 
