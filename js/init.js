@@ -2,11 +2,33 @@ var myVar;
 n =  new Date();
 clientapi = "6Lcy3PQUAAAAAO7Ww09F89ZfWCexf2nkqEmFaBMX";
 
-function myFunction() {
-  myVar = setTimeout(showPage, 500);
-  document.getElementById("date").innerHTML = n.getFullYear();
+document.addEventListener("DOMContentLoaded", function (event) {
+  setTimeout(showPage, 500);
+  fetchYear();
+  getBrowserTheme();
+});
 
+function fetchYear() {
+  document.getElementById("date").innerHTML = n.getFullYear();
 }
+
+function switchMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  var buttonElement = document.getElementById("mode-switch");
+  buttonElement.classList.toggle("dark-mode");
+}
+
+function getBrowserTheme() {
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    document.body.classList.add("dark-mode");
+    var buttonElement = document.getElementById("mode-switch");
+    buttonElement.classList.toggle("dark-mode");
+  }
+};
 
 function openNav() {
     document.getElementById("sidenav").style.width = "100vw";

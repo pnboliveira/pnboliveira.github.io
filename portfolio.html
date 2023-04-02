@@ -23,7 +23,7 @@
 
 </head>
 
-<body onload="myFunction()">
+<body>
     <div id="bg"></div>
     <div id="loader"></div>
 
@@ -184,11 +184,15 @@
     </div>
 
 
-    <a href="index.html" class="footer-link">
-        <footer>&copy; Pedro Oliveira, <span id="date"></span>.</footer>
-    </a>
+    <div id="mode-switch" onclick="switchMode()">
+		<div class="mode-switch-button">
+			<i class="fas fa-moon"></i>
+		</div>
+	</div>
 
-
+	<a href="index.html" class="footer-link">
+		<footer>&copy; Pedro Oliveira, <span id="date"></span>.</footer>
+	</a>
 </body>
 
 </html>
