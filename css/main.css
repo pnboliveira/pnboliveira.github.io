@@ -134,7 +134,13 @@ body.dark-mode {
 
 .border-link a,
 .footer-link {
+  color: #000;
   text-decoration: none;
+}
+
+.dark-mode .border-link a,
+.dark-mode .footer-link {
+  color: #fff;
 }
 
 .border-link a:after {
