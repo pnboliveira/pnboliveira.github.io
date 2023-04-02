@@ -143,6 +143,10 @@ body.dark-mode {
   color: #fff;
 }
 
+.sidenav .border-link a{
+  color: #fff;
+}
+
 .border-link a:after {
   content: "";
   display: block;
