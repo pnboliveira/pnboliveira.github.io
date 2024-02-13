@@ -212,7 +212,7 @@ body.dark-mode {
 
 .profile-image {
   opacity: 1;
-  width: 75%;
+  width: 50%;
   border-radius: 50%;
   border: 5px solid #fff;
   margin: auto;
@@ -383,7 +383,7 @@ body.dark-mode {
 }
 
 .about-img {
-  background-image: url("../img/picture2.jpg");
+  background-image: url("../img/picture_2024.jpg");
   background-size: cover;
   width: 40vw;
   height: 40vw;
@@ -566,7 +566,7 @@ textarea {
 }
 
 .card-item img {
-  width: 25.2vw;
+  width: 100%;
 }
 
 .card {
@@ -811,7 +811,7 @@ textarea {
 
   .about-img {
     clip-path: unset;
-    background-image: url("../img/picture.jpg");
+    background-image: url("../img/picture_2024.jpg");
     background-size: cover;
     max-width: 100%;
     border-radius: 50%;
