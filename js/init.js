@@ -1,5 +1,5 @@
 var myVar;
-n =  new Date();
+n = new Date();
 clientapi = "6Lcy3PQUAAAAAO7Ww09F89ZfWCexf2nkqEmFaBMX";
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -15,8 +15,10 @@ function fetchYear() {
 function switchMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+  element.style.transition = "all 0.2s";
   var buttonElement = document.getElementById("mode-switch");
   buttonElement.classList.toggle("dark-mode");
+  buttonElement.style.transition = "all 0.5s";
 }
 
 function getBrowserTheme() {
@@ -28,15 +30,15 @@ function getBrowserTheme() {
     var buttonElement = document.getElementById("mode-switch");
     buttonElement.classList.toggle("dark-mode");
   }
-};
+}
 
 function openNav() {
-    document.getElementById("sidenav").style.width = "100vw";
-  }
-  
-  function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
-  }
+  document.getElementById("sidenav").style.width = "100vw";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "0";
+}
 
 function showPage() {
   document.getElementById("loader").classList.add("hidden");
@@ -45,5 +47,3 @@ function showPage() {
   document.getElementById("bg").style.opacity = "0.2";
   document.getElementById("bg").style.transition = "all 2s";
 }
-
-

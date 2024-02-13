@@ -566,7 +566,7 @@ textarea {
 }
 
 .card-item img {
-  width: 25.2vw;
+  width: 100%;
 }
 
 .card {
@@ -811,7 +811,7 @@ textarea {
 
   .about-img {
     clip-path: unset;
-    background-image: url("../img/picture.jpg");
+    background-image: url("../img/picture_2024.jpg");
     background-size: cover;
     max-width: 100%;
     border-radius: 50%;
